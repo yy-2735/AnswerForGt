@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习盒子模型</title>
+</head>
+<style>
+    .a {
+        width: 300px;
+        height: 200px;
+        /* border-width: 边框的粗细，一般都用px来表示 */
+        border-width: 5px;
+        /* border-style: 边框的样式; */
+        border-style: solid;
+        /* solid：实线；dashed：虚线，dotted；点线，double：双线边框 */
+        border-color: rgb(237, 158, 184);
+        /* border-color: 边框的颜色 */
+    }
+    .b{
+        width: 300px;
+        height: 200px;
+        /* 练习分开写法 */
+        border-top: 2px dashed blueviolet;
+        border-bottom: 2px solid purple;
+        border-left: 2px dashed blue;
+        border-right: 2px solid darkolivegreen;
+    }
+    .c{
+        width: 300px;
+        height: 200px;
+        background-color: rgb(184, 132, 141);
+        padding: 30px;
+    }
+    .nav{
+        border-top: 3px solid #ff8500;
+        border-bottom: 1px solid #edeef0;
+        line-height: 41px;
+        background-color: #fcfcfc;
+    }
+    .nav a{
+        font-size: 12px;
+        color:burlywood;
+        height: 41px;
+        display: inline-block;
+        /* a属于行内元素，不可调整高，故要转换 */
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+    .d{
+        background-color: cadetblue;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .e{
+        background-color: cadetblue;
+        height: 400px;
+        width: 400px;
+    }
+    .f{
+        width: 100px;
+        height: 200px;
+        margin: 10px auto;
+        /* 表示上下间隔10px同时居中 */
+        background-color: #ff8500;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c">练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距练习内边距</div>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">微博</a>
+        <div class="d">1</div>
+        <div class="e">2</div>
+    </div>
+    <!-- 练习及那个块级盒子居中显示 -->
+    <div class="f">
+        <p>练习行内元素的居中显示</p>
+    </div>
+</body>
+</html>

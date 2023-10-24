@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 练习后代选择器 */
+       p strong {
+            color: aqua;
+       }
+       p a{
+        color: coral;
+       }
+       /* 练习子选择器 */
+       .nav>a {
+        color: blueviolet;
+       }
+       /* 练习并集选择器,可以把，理解为和 */
+       div,p,.abc {
+        color: pink;
+       }
+       
+
+       a{
+        width: 150px;
+        height: 50px;
+        background-color: pink;
+       /* 练习转换显示模式 */
+        display: block;
+       }
+       .b{
+        width: auto;
+       }
+    </style>
+</head>
+<body>
+<p><strong>这是一行加粗的字</strong>这是一行未加粗的字</p>
+<p><a href="https://www.baidu.com/">这是一行准备改变颜色的链接</a></p>
+<div class="nav">
+    <a href="#">我是儿子</a>
+    <p>
+        <a href="#">我是孙子</a>
+    </p>
+    <div>aaaaaa</div>
+    <p>aaaaaaaa</p>
+    <div class="abc">
+        <p>a</p>
+        <p>b</p>
+        <p>c</p>
+    </div>
+    <a href="#">转换显示模式</a>
+    <div class="a"></div>
+    <div class="b"></div>
+    <a href="#">选择未被访问的链接</a>
+</div>
+</body>
+</html>

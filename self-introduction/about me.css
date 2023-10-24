@@ -1,0 +1,70 @@
+/* 目眉的样式 */
+.header{
+    border-top: 6px solid rgb(41, 50, 225);
+    border-bottom: 3px solid #edeef0;
+    line-height: 40px;
+    background-color: #fcfcfc;
+
+}
+.top-left,.top-right {
+    display: inline-block;
+    height: 40px;
+}
+.top-left h1,.top-right{
+    color: rgb(51, 136, 255);
+    font-size: 30px;
+    display: inline;
+    padding: 0 50px;
+}
+.top-left a,.top-right a{
+    font-size: 20px;
+    color: rgb(51, 136, 255);
+    text-decoration: none;
+    padding: 0 50px;
+}
+.top-left a:hover{
+    background-color: rgb(230, 229, 226);
+    color: rgb(41, 50, 225);
+}
+.top-right a:hover{
+    background-color: rgb(230, 229, 226);
+    color: rgb(41, 50, 225);
+}
+.top-right{
+    float: right;
+}
+/* head的样式 */
+.head{
+    width: 1600px;
+    height: 156px;
+    background-image:url(../self-introduction/photo/head.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+/* 版心 */
+.center{
+    background-color: rgb(244, 244, 244);
+    position: absolute;
+    right: 378px;
+    left: 222px;
+}
+/* 照片 */
+.photo{
+    width: 385px;
+    height: 385px;
+    background-image: url(../self-introduction/photo/photo.jpg);
+    background-size: 100% 100%;
+    float: right;
+}
+/* 内容介绍 */
+.center h1{
+    margin: 0px;
+}
+.center p{
+    text-indent: 2em;
+    display: inline-block;
+    width:640px;
+    /* 疑问:不是转换为行内块元素了吗,按理说宽度不起作用,那为什么删掉要出错捏? */
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,52 @@
+/* 目眉的样式 */
+.header{
+    border-top: 6px solid #ff8500;
+    border-bottom: 3px solid #edeef0;
+    line-height: 40px;
+    background-color: #fcfcfc;
+
+}
+.top-left,.top-right {
+    display: inline-block;
+    height: 40px;
+}
+.top-left h1,.top-right{
+    color: rgb(136, 76, 31);
+    font-size: 30px;
+    display: inline;
+    padding: 0 50px;
+}
+.top-left a,.top-right a{
+    font-size: 20px;
+    color: rgb(136, 76, 31);
+    text-decoration: none;
+    padding: 0 50px;
+}
+.top-left a:hover{
+    background-color: rgb(230, 229, 226);
+    color: #ff8500;
+}
+.top-right a:hover{
+    background-color: rgb(230, 229, 226);
+    color: #ff8500;
+}
+.top-right{
+    float: right;
+}
+/* 搜索框的样式 */
+/* 文章展示 */
+.markdown p{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+.markdown a{
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+}
+.markdown a:hover{
+    background-color: rgb(230, 229, 226);
+    color: rgb(100, 100, 113);
+}
